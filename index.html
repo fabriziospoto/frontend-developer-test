@@ -3,21 +3,214 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />   
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">   
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Document title -->
     <title>DAJE | Home Page</title>
     <!-- Stylesheets & Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link href="css/index.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <!-- Write here the html page content -->
+
+    <!-- @@@@@@__NAVBAR__@@@@@@ -->
+    <header class="w100 bgc-white">
+        <div class="d-flex flex-menu container">
+            <img src="images/logo.png" alt="logo">
+            <div class="d-flex loghi-menu">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart green"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- @@@@@@__JUMBOTRON__@@@@@@ -->
+    <div class="jumbotron w100">
+        <div class="container">
+            <div class="d-flex jumbotron-left">
+                <div class="jumbotron-box w100 bgc-white">
+                    <h3>La spesa online dai piccoli negozi di quartiere sirettamente a casa tua</h3>
+                    <p>Ricevi a casa tua, in meno di 24 ore, prodotti dai negozi locali che ami in un unico ordine.</p>
+                    <div class="jumbo-input">
+                        <input type="text" name="" value="" placeholder="Inserisci il tuo cap per la consegna">
+                        <span class="fas fa-search green"></span>
+                    </div>
+                    <h6>Verifica la copertura del servizio nella tua zona</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__HOW__@@@@@@ -->
+    <div class="100 bgc-white">
+        <div class="container">
+            <div class="come-funziona w100">
+                <h2>Come funziona?</h2>
+            </div>
+            <div class="d-flex how-logos w100">
+                <div class="how-box d-flex">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Scegli il tuo cap e visita i negozi.</p>
+                </div>
+                <div class="how-box d-flex">
+                    <i class="fas fa-users"></i>
+                    <p>Ordina prodotti da tutti i negozi che vuoi.</p>
+                </div>
+                <div class="how-box d-flex">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Ricevi a casa tua con un'unica spedizione</p>
+                </div>
+            </div>
+            <div class="link-review w100">
+                <a href="#" class="green">Leggi le recensioni e le domande comuni</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__WHY__@@@@@@ -->
+    <div class="w100 bgc-green">
+        <div class="container">
+            <div class="title">
+                <h2>Perché scegliere DAJE?</h2>
+            </div>
+            <div class="w100 d-flex flex-mquery">
+                <div class="why-picture"></div>
+                <div class="why-motives d-flex">
+                    <ol>
+                        <li>Acquista dai tuoi negozianti di fiducia</li>
+                        <li>Ricevi prodotti freschi e di qualità</li>
+                        <li>Supporta i tesori del tuo quartiere</li>
+                    </ol>
+                    <a href="#">Scopri di più sui benefici del fare la tua spesa con DAJE.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__GIORNALI__@@@@@@ -->
+    <div class="w100 bgc-white">
+        <div class="container">
+            <div class="title">
+                <h2>Potresti aver visto DAJE su</h2>
+            </div>
+            <div class="journal-big-box w100 d-flex">
+                <img src="images/logo-corriere-della-sera.png" alt="Corriere">
+                <img src="images/logo-il-sole-24-ore.png" alt="Sole 24 ore">
+                <img src="images/logo-millionaire.png" alt="Millionaire">
+                <img src="images/logo-rai-news.png" alt="Rai News">
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__RECENSIONI__@@@@@@ -->
+    <div class="w100 bgc-green">
+        <div class="container">
+            <div class="title">
+                <h2>Cosa ne pensano le persone</h2>
+            </div>
+            <div class="recensioni-big-box w100 d-flex">
+                <div id="rev1" class="recensioni-box bgc-white">
+                    <div class="review-title d-flex">
+                        <h3>Chiara</h3>
+                    </div>
+                    <div class="review d-flex">
+                        <h5>"Servizio impeccabile, spesa arrivata in giornata. In questo momento una vera e propria salvezza"</h5>
+                    </div>
+                    <div class="stars d-flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div id="rev2" class="recensioni-box bgc-white">
+                    <div class="review-title w100 d-flex">
+                        <h3>Ettore</h3>
+                    </div>
+                    <div class="review w100 d-flex">
+                        <h5>"Sito internet molto intuitivo e facile da consultare. Servizio veloce e prodotti buoni, servizio clienti impeccabile. Davvero ottimo!"</h5>
+                    </div>
+                    <div class="stars w100 d-flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div id="rev3" class="recensioni-box bgc-white">
+                    <div class="review-title w100 d-flex">
+                        <h3>Lorena</h3>
+                    </div>
+                    <div class="review w100 d-flex">
+                        <h5>"Servizio comodo, preciso e prodotti di qualità. Lo consiglio vivamente."</h5>
+                    </div>
+                    <div class="stars w100 d-flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__FAQ__@@@@@@ -->
+    <div class="w100 bgc-white">
+        <div class="container">
+            <div class="title">
+                <h2>Domande Frequenti</h2>
+            </div>
+            <div class="faq-big-box w100">
+                <button type="button" class="collapsible w100 bgc-green d-flex"><p>Come funziona la consegna?</p><span><i class="fas fa-chevron-down"></i></span></button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span><a href="#">Link</a><span></p>
+                </div>
+                <button type="button" class="collapsible w100 bgc-green d-flex"><p>Dov'è attivo il servizio?</p><span><i class="fas fa-chevron-down"></i></span></button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span><a href="#">Link</a><span></p>
+                </div>
+                <button type="button" class="collapsible w100 bgc-green d-flex"><p>Quanto costa il servizio</p><span><i class="fas fa-chevron-down"></i></span></button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button type="button" class="collapsible w100 bgc-green d-flex"><p>Se qualcosa non va con il mio ordine?</p><span><i class="fas fa-chevron-down"></i></span></button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="faq-link w100">
+                <a href="#contatti">
+                    Hai altre domande? Clicca qui per contattarci: saremo subito da te!
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__CONTATTI__@@@@@@ -->
+    <footer class="w100 bgc-green">
+        <div class="container">
+            <div class="title">
+                <h2>Hai un negozio?</h2>
+            </div>
+            <div class="contatti-descrizione w100">
+                <h3>La nostra missione è quella di riuscire a connettere le persone con i negozi del proprio quartiere. Se hai un negozio e vuoi unirti a Daje, o se vuoi solamente richiedere informazioni in merito al funzionamento del servizio, contattaci e saremo felici di spiegarti tutto.</h3>
+            </div>
+            <button class="bgc-white" type="button" name="button">Contattaci</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -3,21 +3,249 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />   
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">   
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Document title -->
     <title>DAJE | Merchant Page</title>
     <!-- Stylesheets & Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link href="css/index.css" rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <!-- Write here the html page content -->
+
+    <!-- @@@@@@__NAVBAR__@@@@@@ -->
+    <header class="w100 bgc-white">
+        <div class="d-flex flex-menu container">
+            <a href="#"><i id="chevron-l" class="fas fa-chevron-left"></i></a>
+            <div class="d-flex loghi-menu">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart green"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- @@@@@@__CAROUSEL__@@@@@@ -->
+    <div class="slider-wrapper w100">
+        <div class="prev">
+            <i class="fas fa-angle-left"></i>
+        </div>
+        <div class="images w100">
+            <img class="active first" src="images/merchant-carousel-4.png" alt="foto4">
+            <img src="images/merchant-carousel-3.png" alt="foto3">
+            <img src="images/merchant-carousel-2.png" alt="foto2">
+            <img class="last" src="images/merchant-carousel-1.png" alt="foto1">
+        </div>
+        <div class="next">
+            <i class="fas fa-angle-right"></i>
+        </div>
+        <div class="nav">
+            <i id="point1" class="fas fa-circle active first"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle last"></i>
+        </div>
+    </div>
+
+    <!-- @@@@@@__PRESENTAZIONE__@@@@@@ -->
+    <div class="w100 bgc-white">
+        <div class="container">
+            <div id="pres" class="pres w100">
+                <h2>Gianfranco e Antonella</h2>
+                <p>Mercato San Giovanni Di Dio - Box 71</p>
+                <p>333 333 3333</p>
+            </div>
+            <div id="description" class="w100">
+                <h3>Tantissimi prodotti di qualità, da tantissimi anni al mercato San Giovanni Di Dio. Abbiamo prodotti di Castelluccio Di Norcia per le nostre origini e per promuovere i prodotti dei paesi terremotati. Siamo in contatto in modo diretto con tantissime aziende del posto.</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__PRODOTTI__@@@@@@ -->
+    <div class="w100 bgc-green container product-radius">
+        <div class="collapsible">
+            <div class="d-flex product-flex">
+                <h2 class="merchant-title">Offerte (2)</h2>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto">
+                        <h3>Composta Sibilla Di Norcia di albicocca senza zucchero - Vasetto da 350g</h3>
+                        <h5>Ingredienti: lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</h5>
+                        <p><del>€5,73</del><span class="green">€4,50</span> l'uno</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto margin-t">
+                        <h3>Formaggio di pecora - Valle del Sole</h3>
+                        <h3>Porzione da 500g</h3>
+                        <p><del>€6,84</del><span class="green">€5,10</span> a porzione</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w100 bgc-green container product-radius">
+        <div class="collapsible">
+            <div class="d-flex product-flex">
+                <h2 class="merchant-title">Confetture (3)</h2>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto">
+                        <h3>Composta Sibilla Di Norcia di prugne senza zucchero - Vasetto da 350g</h3>
+                        <h5>Ingredienti: lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</h5>
+                        <p><span class="green">€5,73</span> l'uno</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto">
+                        <h3>Composta Sibilla Di Norcia di pesche senza zucchero - Vasetto da 350g</h3>
+                        <h5>Ingredienti: lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</h5>
+                        <p><span class="green">€5,73</span> l'uno</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto">
+                        <h3>Composta Sibilla Di Norcia di fragole senza zucchero - Vasetto da 350g</h3>
+                        <h5>Ingredienti: lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</h5>
+                        <p><span class="green">€5,73</span> l'uno</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w100 bgc-green container product-radius">
+        <div class="collapsible">
+            <div class="d-flex product-flex">
+                <h2 class="merchant-title">Lenticchie (5)</h2>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto margin-t">
+                        <h3>Lenticchia di San Benedetto - Norcia</h3>
+                        <h3>Confezione da 500g</h3>
+                        <p><span class="green">€4,46</span> a porzione</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto margin-t">
+                        <h3>lenticchia I.G.P. di Castelluccio</h3>
+                        <h3>Porzione da 500g</h3>
+                        <p><span class="green">€6,79</span> a porzione</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto margin-t">
+                        <h3>Lenticchia Rossa Decorticata</h3>
+                        <h3>Porzione da 500g</h3>
+                        <p><span class="green">€5,10</span> a porzione</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto margin-t">
+                        <h3>Lenticchia in vetro</h3>
+                        <h3>Porzione da 400g</h3>
+                        <p><span class="green">€1,27</span> a porzione</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w100 bgc-white">
+                <div class="container clearfix">
+                    <div class="prodotto margin-t">
+                        <h3>Lenticchia Pomilia</h3>
+                        <h3>Porzione da 400g</h3>
+                        <p><span class="green">€1,27</span> a porzione</p>
+                    </div>
+                    <div class="quantita d-flex product-q">
+                        <button  class="dec btn btn-info fa fa-minus pull-left"></button>
+                        <input type="text" name="" value="">
+                        <button class="inc btn btn-info fa fa-plus pull-right"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@__CONTATTI MERCHANT__@@@@@@ -->
+    <footer id="merchantContacts" class="w100 bgc-green">
+        <div class="container">
+            <h2>Hai domande, dubbi o curiosità?</h2>
+            <h4>Faccelo sapere! Chiama al numero 333 333 3333</h4>
+        </div>
+    </footer>
+
+    <script src="js/merchant.js"></script>
 </body>
 
 </html>
